@@ -1,7 +1,7 @@
 import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
 
-
+// This is for github
 // Not being called?
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
