@@ -10,11 +10,11 @@ import Menu from "./components/menu/Menu";
 
 // Create function and call all components
 function App() {
-  const [menuOpen,setMenuOpen] = useState(true)
+  const [menuOpen,setMenuOpen] = useState(false)
   return (
     <div className="app">
-      <Topbar menuOpen={menuOpen} serMenuOpen={setMenuOpen}/>
-      <Menu menuOpen={menuOpen} serMenuOpen={setMenuOpen}/>
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections"> 
         <Intro/>
         <Portfolio/>
