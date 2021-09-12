@@ -1,9 +1,12 @@
-import "./portfolio.scss"
+import "./portfolioList.scss";
 
-export default function PortfolioList() {
-    return (
-        <li className="portfolioList">
-            
-        </li>
-    )
+export default function PortfolioList({ id, title, active, setSelected }) {
+  return (
+    <li
+      className={active ? "portfolioList active" : "portfolioList"}
+      onClick={() => setSelected(id)}
+    >
+      {title}
+    </li>
+  );
 }
